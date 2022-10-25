@@ -348,10 +348,18 @@ td {
     .searching {
         height: 20%;
     }
+
     .card {
         margin-top: 2%;
     }
- 
+
+    input[type=text] {
+        width: 100%;
+    }
+
+    input[type=email] {
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width:800px) {
