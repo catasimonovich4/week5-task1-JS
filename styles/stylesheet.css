@@ -132,3 +132,94 @@ footer {
 footer > span {
    margin-right: 1%;
 }
+
+.contact-section {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    padding: 2%;
+    margin-top: 3%;
+    color: #D90368;
+    background-color: #242038;
+
+}
+
+.email {
+    margin-bottom: 3%;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.name {
+    margin-bottom: 4%;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.name > input {
+    margin-left: 1.2%;
+}
+
+.comment {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3%;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.comment > label {
+    margin-bottom: 1%;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.submit-button {
+    display: flex;
+    justify-content: end;
+}
+
+.btn-primary {
+    --bs-btn-bg: #D90368;
+    --bs-btn-border-color: #D90368;
+    --bs-btn-hover-bg: #a80350;
+    --bs-btn-hover-border-color: #a80350;
+    --bs-btn-color: #CAC4CE;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+input[type=email] {
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.74);
+    font-family: unset;
+}  
+
+textarea {
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.74);
+    font-size: 16px;
+}  
+
+.contact-page-footer {
+  position: relative;
+  position: fixed;
+  bottom: 0%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #242038;
+  padding: 0.1%;
+  width: 100%;
+  margin-top: 1%; 
+  font-size: 20px;
+  color: #CAC4CE;
+}
