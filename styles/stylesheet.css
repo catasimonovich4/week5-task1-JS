@@ -19,6 +19,10 @@ body {
 color: #CAC4CE;
 }
 
+.nav-bar {
+    margin-right: 1%;
+}
+
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
     color: var(--bs-nav-pills-link-active-color);
     background-color: #D90368;
@@ -145,9 +149,8 @@ footer > span {
     width: 50%;
     padding: 2%;
     margin-top: 3%;
-    color: #D90368;
-    background-color: #242038;
-
+    color:#a80350;
+    border-radius: 10px;
 }
 
 .email {
@@ -156,21 +159,17 @@ footer > span {
     font-weight: bold;
 }
 
-
 .name {
     margin-bottom: 4%;
     font-size: 20px;
     font-weight: bold;
 }
 
-.name > input {
-    margin-left: 1.2%;
-}
-
 .comment {
     display: flex;
     flex-direction: column;
     margin-bottom: 3%;
+    margin-top: 5%;
     font-size: 20px;
     font-weight: bold;
 }
@@ -222,4 +221,38 @@ textarea {
   margin-top: 1%; 
   font-size: 20px;
   color: #CAC4CE;
+}
+
+.table-container {
+    width: 80%;
+    margin: 3% 0%;
+    padding: 2%;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.table {
+    color: #242038;
+    border: 1px solid;
+}
+
+.title-row {
+    background-color: #242038;
+    color: #CAC4CE;
+}
+
+
+
+td {
+    border: 1px solid;
+    font-weight: 500;
+}
+
+.empty-row > td {
+    height: 30px;
+}
+
+.stats-main {
+    display: flex;
+    justify-content: center;
 }
