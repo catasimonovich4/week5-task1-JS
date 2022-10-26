@@ -3,7 +3,8 @@ body {
 }
 
 .logo {
-    padding-left: 2%;
+    padding-left: 3%;
+    width: 60%;
 }
 
 .nav {
@@ -271,6 +272,7 @@ textarea {
 .table {
     color: #242038;
     border: 1px solid;
+    margin-bottom: 0%;
 }
 
 .title-row {
@@ -295,6 +297,7 @@ td {
 .detail-card-section {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .detail-card-container {
@@ -302,11 +305,13 @@ td {
     display: flex;
     background-color: white;
     margin-top: 3%;
+    flex-wrap: wrap;
 }
 
 .img-detail-container {
     padding: 30px;
     padding-right: 5px;
+    flex-wrap: wrap;
 }
 
 .img-detail-container > img {
@@ -323,6 +328,7 @@ td {
     justify-content: center;
     padding: 30px 25px 30px 20px; 
     text-align: justify;
+    flex-wrap: wrap;
 }
 
 .detail-info-container > span {
@@ -347,7 +353,7 @@ td {
 }
 
 
-@media only screen and (min-height:1080px) {
+@media only screen and (min-height:769px) {
     /* Mayor que mi pantalla: */
     footer {
         position: fixed;
@@ -356,7 +362,7 @@ td {
     }
 }
 
-@media only screen and (max-width:1200px) {
+@media only screen and (max-width:1365px) {
     /* For inspector: */
     .searching {
         height: 20%;
@@ -373,6 +379,12 @@ td {
     input[type=email] {
         width: 100%;
     }
+
+    .detail-card-container {
+        width: 90%;
+        margin-top: 8%;
+    }
+
 }
 
 @media only screen and (max-width:800px) {
@@ -387,19 +399,26 @@ td {
  
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 993px){
     #navbarSupportedContent{
     display: block;
     }
 }
 
-@media only screen and (max-width:767px) {
+@media only screen and (max-width:992px) {
     /* For mobile phones: */
+    .navbar {
+        justify-content: center;
+    }
+
+    .logo-container {
+        display: flex;
+        justify-content: center;
+    }
 
     .logo {
         width: 90%;
     }
-
 
     h1 {
         text-align: center;
@@ -424,4 +443,38 @@ td {
         width: 90%;
     }
 
+    .detail-card-container {
+        width: 90%;
+    }
+
+    .img-detail-container {
+        width: 100%;
+        padding: 5%;
+    }
+
+    .img-detail-container > img {
+        height: 100%;
+        width: 100%;
+        
+    }
+
+    .detail-info-container {
+        width: 100%;
+        font-size: 16px;
+        padding-top: 0%;
+        padding-bottom: 0%;
+    }
+
+    .detail-info-container > span {
+        margin-top: 0%;
+    }
+
+    .less-content-footer {
+        position: unset;
+        margin-top: 2%;
+    }
+
+    .table-container {
+        width: 88%;
+    }
 }
