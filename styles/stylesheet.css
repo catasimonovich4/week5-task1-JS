@@ -7,8 +7,17 @@ body {
 }
 
 .nav {
+    display: flex;
+    justify-content: end;
     --bs-nav-link-color: var(--bs-link-color);
     --bs-nav-link-hover-color: #D90368;
+}
+
+.burger {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 1%;
 }
 
 .navbar {
@@ -378,8 +387,20 @@ td {
  
 }
 
-@media only screen and (max-width:696px) {
+@media screen and (min-width: 768px){
+    #navbarSupportedContent{
+    display: block;
+    }
+}
+
+@media only screen and (max-width:767px) {
     /* For mobile phones: */
+
+    .logo {
+        width: 90%;
+    }
+
+
     h1 {
         text-align: center;
     }
